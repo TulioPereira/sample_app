@@ -16,12 +16,21 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   gem 'byebug'
   gem 'sqlite3'
-  gem 'rspec-rails', '2.13.1'
+  gem 'rspec-rails', '3.3.2'
+  gem 'guard-rspec', '4.6.0'
+  gem 'spork-rails', '4.0.0'
+  gem 'guard-spork'
+  gem 'childprocess', '0.3.6'
 end
 
 group :test do
   gem 'selenium-webdriver', '2.35.1'
-  gem 'capybara', '2.1.0'
+  gem 'capybara', '2.2.0'
+  gem 'libnotify', '0.8.0'
+  gem 'minitest-reporters'
+  gem 'mini_backtrace'
+  gem 'guard'
+  gem 'guard-minitest'
 end
 
 group :development do
